@@ -23,10 +23,12 @@ use App\Http\Controllers\FrontEnd\DashboardController;
 */
 
 Route::get('/', function () {
+
+
     // $password = Hash::make('Password');
     // $haloDunia = haloDunia();
     // $dateFormat = DateHelper::dateFormat('d-m-Y');
-    // dd($haloDunia);
+
     App::setLocale(session('bahasa')); // ini untuk mengeset dari session bahasa yg di tulis di url
     return view('welcome');
 });
