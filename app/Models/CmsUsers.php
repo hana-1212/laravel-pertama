@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class CmsUsers extends Model
+{
+    use HasFactory;
+
+    protected $table = 'cms_users';
+    protected $fileble = [
+        'name',
+        'email',
+        'password',
+        'foto',
+
+    ];
+}
